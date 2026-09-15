@@ -9,7 +9,7 @@ import { ContactUs } from "./component/pages/ContactUs.jsx";
 function Router (){
     return (
         <>
-        <BrowserRouter>
+        <BrowserRouter basename="/ECommerceWebAppByUsingReact">
         <Routes>
         <Route element = {<Layout/>}>
           <Route path = "/" element = {<Home/>}  />
