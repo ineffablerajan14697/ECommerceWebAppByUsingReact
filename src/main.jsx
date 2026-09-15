@@ -16,12 +16,12 @@ createRoot(document.getElementById('root')).render(
   <>
     
     
-    {/* <MyContextApi>
+    <MyContextApi>
       <Router/>
-    </MyContextApi> */}
-< Provider store = {storeData}>
+    </MyContextApi>
+{/* < Provider store = {storeData}>
 <Home/>
-</Provider>
+</Provider> */}
     
     
     
