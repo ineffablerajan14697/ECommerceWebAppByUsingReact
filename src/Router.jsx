@@ -1,4 +1,6 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import { HashRouter, Routes, Route } from "react-router-dom";
+
 import {Home} from "./component/pages/Home.jsx"
 import { About } from "./component/pages/About.jsx";  
 import { Products } from "./component/pages/Products.jsx";  
@@ -9,7 +11,7 @@ import { ContactUs } from "./component/pages/ContactUs.jsx";
 function Router (){
     return (
         <>
-        <BrowserRouter basename="/ECommerceWebAppByUsingReact">
+        <HashRouter >
         <Routes>
         <Route element = {<Layout/>}>
           <Route path = "/" element = {<Home/>}  />
@@ -19,7 +21,7 @@ function Router (){
           </Route>
           <Route path = "*" element = {<Error404/>} />
         </Routes>
-        </BrowserRouter>
+        </HashRouter>
         </>
     )
 }
